@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-principal: #9B5EF7;
+    --cor-secundaria: #1D1D1D;
+    --cor-terciaria: #fff;
+    --fonte-princiapl: "Archivo", sans-serif;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    font-family: var(--fonte-princiapl);
+    color: var(--cor-secundaria);
+}
+
+.name{
+    font-size: 80px;
+    
+}
+.surname{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--cor-principal);
+}
+
+.profission{
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    text-align: center;
+    height: auto;
+    width: 82%;
+}
+
+.home-photo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--cor-principal);
+}
+
+.button-about{
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    border: none;
+    width: 160px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+}
+
+@keyframes in-circle-swoop {
+    from {
+      clip-path: var(--circle-top-right-out);
+    }
+    to {
+      clip-path: var(--circle-bottom-right-in);
+    }
+  }
+  
+  [transition-style="in:custom:circle-swoop"] {
+    --transition__duration: 5s;
+    animation-name: in-circle-swoop;
+  }
