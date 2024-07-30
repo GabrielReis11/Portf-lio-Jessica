@@ -1,65 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");  
 :root{
-    --cor-principal: #9B5EF7;
-    --cor-secundaria: #1D1D1D;
-    --cor-terciaria: #fff;
-    --fonte-princiapl: "Archivo", sans-serif;
+  --cor-principal: #9B5EF7;
+  --cor-secundaria: #1D1D1D;
+  --cor-terciaria: #fff;
+  --fonte-princiapl: "Archivo", sans-serif;
+}
+
+*{
+  font-family: var(--fonte-princiapl);
 }
 
 .home{
-    height: 100vh;
-    display: flex;
-    font-family: var(--fonte-princiapl);
-    color: var(--cor-secundaria);
+  height: 100vh;
+  display: flex;
+  font-family: var(--fonte-princiapl);
+  color: var(--cor-secundaria);
 }
+
+.sobre-mim{
+  min-height: 100vh;
+}
+
 
 .name{
     font-size: 80px;
-    
 }
 .surname{
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--cor-principal);
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--cor-principal);
 }
 
 .profission{
-    background-color: var(--cor-principal);
-    color: var(--cor-terciaria);
-    text-align: center;
-    height: auto;
-    width: 82%;
+  background-color: var(--cor-principal);
+  color: var(--cor-terciaria);
+  text-align: center;
+  height: auto;
+  width: 82%;
 }
 
 .home-photo{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: var(--cor-principal);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--cor-principal);
 }
 
 .button-about{
-    background-color: var(--cor-principal);
-    color: var(--cor-terciaria);
-    border: none;
-    width: 160px;
-    font-weight: 700;
-    font-size: 20px;
-    padding: 0.5rem 1rem;
-    border-radius: 40px;
+  background-color: var(--cor-principal);
+  color: var(--cor-terciaria);
+  border: none;
+  width: 160px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
 }
 
 @keyframes in-circle-swoop {
-    from {
-      clip-path: var(--circle-top-right-out);
-    }
-    to {
-      clip-path: var(--circle-bottom-right-in);
-    }
+  from {
+    clip-path: var(--circle-top-right-out);
   }
+  to {
+    clip-path: var(--circle-bottom-right-in);
+  }
+}
   
-  [transition-style="in:custom:circle-swoop"] {
-    --transition__duration: 5s;
-    animation-name: in-circle-swoop;
-  }
+[transition-style="in:custom:circle-swoop"] {
+  --transition__duration: 5s;
+  animation-name: in-circle-swoop;
+}
+a{
+  text-decoration: none;
+}
+.menu{
+  width: 15%;
+  position: static;
+}
+
+.foto-rosto{
+  width: 100%;
+  height: 30vh;
+  padding-top: 10px;
+}
+
+.menu-lateral{
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.navegacao{
+  background-color: var(--cor-principal);
+  list-style-type: none;
+  font-size: 24px;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-left: 0;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.conteudo{
+  width: 100vw;
+}
+.about-info{
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  font-family: var(--fonte-princiapl);
+}
+
+.titulo{
+  font-size: 64px;
+  font-weight: 700;
+  background-color: var(--cor-principal);
+  color: white;
+  width: 100%;
+  height: 100px;
+}
+
+.title-zone{
+  background-color: var(--cor-principal);
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  color: white;
+
+}
+
+.titulo-secao{
+  font-size: 3rem;
+  height: auto;
+}
+
+.dados{
+  background-color: var(--cor-principal);
+  height: 80%;
+}
+
+.info-area{
+  width: 80%;
+  height: 80%;
+  background-color: var(--cor-principal);
+}
+
+.btn-area{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-cliente{
+  border: 1px solid var(--cor-principal);
+  color: #9B5EF7;
+  background-color: white;
+  padding: 5px 10px;
+  transition: 0.4s;
+}
+
+.btn-cliente:hover{
+  background-color: #9B5EF7;
+  transform: scale(1.1);
+  color: white;
+}
+
+.fotos-area{
+  width: 95%;
+  height: 100%;
+  background-color: var(--cor-principal);
+}
